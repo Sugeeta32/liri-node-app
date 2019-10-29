@@ -31,7 +31,7 @@ Watch the video here - " link to my google drive video or recording of the outpu
 1. You can choose to run any of the above four commands, which will result in your desired output. Please follow the example to run the command in your terminal
 
 
-**Example 1: Run the concert-this command
+**Example 1: Run the concert-this command**
 
 
 `node liri.js concert-this<name of artist or band>`
@@ -43,7 +43,7 @@ OUTPUT: The system will display a list of 5 events and locations of the bands pe
  
 
 
- **Example 2:  Run the spotify-this command
+ **Example 2:  Run the spotify-this command**
 
 
 `node liri.js spotify-this-song<name of song>`
@@ -52,7 +52,7 @@ OUTPUT: The system will display the search result. The system will also log all 
 
 <screen shot of concert>
  
- **Example 3:  Run the movie-this command
+ **Example 3:  Run the movie-this command**
 
 
 `node liri.js movie-this<movie name >`
