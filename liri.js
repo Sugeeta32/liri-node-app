@@ -52,11 +52,12 @@ function movieThis() {
 
     axios.get("http://www.omdbapi.com/?t=" + input + "&y=&plot=short&apikey=trilogy").then(
         function (response) {
+
+            
+            console.log("\n" + "----Movie  -----" + "\n");
+            fs.appendFile("log.txt", +"\n" + "----OMDB Movie -----" + "\n");
             console.log("Title: " + response.data.Title);
             fs.appendFile("log.txt", "Title: " + response.data.Title + "\n");
-
-
-
             console.log("Year: " + response.data.Year);
             fs.appendFile("log.txt", " Year:" + response.data.Year + "\n");
             console.log("Ratings : " + response.data.Ratings[0]);
@@ -103,10 +104,16 @@ function spotifyThis() {
         }
 
         //   console.log(data.tracks.items[0]);
-        console.log("Artist:" + data.tracks.items[0].artists[0].name);
+        console.log("\n" + "----Spotify Song -----" + "\n");
+        fs.appendFile("log.txt", +"\n" + "----Spotify Song -----" + "\n");
+        console.log("Artist(s):" + data.tracks.items[0].artists[0].name);
+        fs.appendFile("log.txt", "Artist(s):" + data.tracks.items[0].artists[0].name + "\n");
         console.log(`Title: ${data.tracks.items[0].name}`);
-        console.log(`Preview: ${data.tracks.items[0].preview_url}`);
+        fs.appendFile("log.txt", "Title: " + data.tracks.items[0].name + "\n");
+        console.log(`Preview link: ${data.tracks.items[0].preview_url}`);
+        fs.appendFile("log.txt", "Preview link: " + data.tracks.items[0].preview_url + "\n");
         console.log(`Album: ${data.tracks.items[0].album.name}`);
+        fs.appendFile("log.txt", "Album: " + data.tracks.items[0].album.name + "\n")
 
 
     });
@@ -120,12 +127,17 @@ function concertThis() {
         .then(function (response) {
             for (var i = 0; i < 5; i++) {
                 // handle success
+                console.log("\n" + "----Concert List  -----" + "\n");
+                fs.appendFile("log.txt", +"\n" + "----Concert List -----" + "\n");
                 console.log("Name of the Venue: " + response.data[i].venue.name);
-                console.log("Venue Location or City: "+response.data[i].venue.city);
-                console.log("Date of the Event: "+ moment(response.data[i].datetime).format("MM/DD/YYYY"));
+                fs.appendFile("log.txt", "Name of the Venue: " + response.data[i].venue.name +"\n" )
+                console.log("Venue Location or City: " + response.data[i].venue.city);
+                fs.appendFile("log.txt", "Venue Location or City: " + response.data[i].venue.city +"\n" )
+                console.log("Date of the Event: " + moment(response.data[i].datetime).format("MM/DD/YYYY"));
+                fs.appendFile("log.txt","Date of the Event: " + moment(response.data[i].datetime).format("MM/DD/YYYY")+"\n" )
                 //console.log(moment("Date: "+response.data[i].datetime).format("YYYY-MM-DD hh:mm:ss a"));
             }
-            
+
         })
         .catch(function (error) {
             if (error.response) {
