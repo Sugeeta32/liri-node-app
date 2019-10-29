@@ -30,7 +30,7 @@ function userInput() {
             break;
         case "concert-this": concertThis();
             break;
-        case "do-what-it-says": DoWhatItSays();
+        case "do-what-it-says": doWhatItSays();
             break;
 
     }
@@ -52,24 +52,26 @@ function movieThis() {
 
     axios.get("http://www.omdbapi.com/?t=" + input + "&y=&plot=short&apikey=trilogy").then(
         function (response) {
-
+            // console.log(response.data.Ratings[1].Value);
             
             console.log("\n" + "----Movie  -----" + "\n");
-            fs.appendFile("log.txt", +"\n" + "----OMDB Movie -----" + "\n");
+            fs.appendFile("log.txt", +"\n" + "----OMDB Movie -----" + "\n"+ "\n");
             console.log("Title: " + response.data.Title);
             fs.appendFile("log.txt", "Title: " + response.data.Title + "\n");
             console.log("Year: " + response.data.Year);
-            fs.appendFile("log.txt", " Year:" + response.data.Year + "\n");
-            console.log("Ratings : " + response.data.Ratings[0]);
-            fs.appendFile("log.txt", " Ratings:" + response.data.Ratings[0] + "\n");
+            fs.appendFile("log.txt", " Year: " + response.data.Year + "\n");
+            console.log("IMDB Rating : " + response.data.Ratings[0].Value);
+            fs.appendFile("log.txt", " IMDB Rating: " + response.data.Ratings[0].Value + "\n");
+            console.log("Rotten Tomato Rating : " + response.data.Ratings[1].Value);
+            fs.appendFile("log.txt", " Rotten Tomato Rating: " + response.data.Ratings[1].Value + "\n");
             console.log("Country: " + response.data.Country);
-            fs.appendFile("log.txt", " Country:" + response.data.Country + "\n");
+            fs.appendFile("log.txt", " Country: " + response.data.Country + "\n");
             console.log("Language: " + response.data.Language);
-            fs.appendFile("log.txt", " Language:" + response.data.Language + "\n");
+            fs.appendFile("log.txt", " Language: " + response.data.Language + "\n");
             console.log("Plot: " + response.data.Plot);
-            fs.appendFile("log.txt", " Plot:" + response.data.Plot + "\n");
+            fs.appendFile("log.txt", " Plot: " + response.data.Plot + "\n");
             console.log("Actors: " + response.data.Actors);
-            fs.appendFile("log.txt", " Actors:" + response.data.Actors + "\n");
+            fs.appendFile("log.txt", " Actors: " + response.data.Actors + "\n");
         }
 
     )
@@ -93,6 +95,7 @@ function movieThis() {
 
 }
 
+//Spotify API
 function spotifyThis() {
     if (input === undefined) {
         input = "The Sign"
@@ -105,8 +108,8 @@ function spotifyThis() {
 
         //   console.log(data.tracks.items[0]);
         console.log("\n" + "----Spotify Song -----" + "\n");
-        fs.appendFile("log.txt", +"\n" + "----Spotify Song -----" + "\n");
-        console.log("Artist(s):" + data.tracks.items[0].artists[0].name);
+        fs.appendFile("log.txt", "----Spotify Song -----" + "\n"+ "\n");
+        console.log(`Artist(s): ${data.tracks.items[0].artists[0].name} `);
         fs.appendFile("log.txt", "Artist(s):" + data.tracks.items[0].artists[0].name + "\n");
         console.log(`Title: ${data.tracks.items[0].name}`);
         fs.appendFile("log.txt", "Title: " + data.tracks.items[0].name + "\n");
@@ -128,7 +131,7 @@ function concertThis() {
             for (var i = 0; i < 5; i++) {
                 // handle success
                 console.log("\n" + "----Concert List  -----" + "\n");
-                fs.appendFile("log.txt", +"\n" + "----Concert List -----" + "\n");
+                fs.appendFile("log.txt", "----Concert List -----"  + "\n"+ "\n");
                 console.log("Name of the Venue: " + response.data[i].venue.name);
                 fs.appendFile("log.txt", "Name of the Venue: " + response.data[i].venue.name +"\n" )
                 console.log("Venue Location or City: " + response.data[i].venue.city);
@@ -157,4 +160,20 @@ function concertThis() {
             console.log(error.config);
         });
 
+}
+//Do-what-it-says using fs package to read random.txt
+function doWhatItSays(){
+    fs.readFile("random.txt", "utf8", function(err,data){
+        if(err){
+            return console.log(err);
+        }else{
+            dataArray = dat.split(",");
+            request = dataArray[0];
+            input= dataArray[1];
+            userInput();
+
+        }
+
+
+    })
 }

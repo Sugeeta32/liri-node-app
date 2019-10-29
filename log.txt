@@ -57,3 +57,100 @@ Artist(s):Night Lovell
 Preview link: https://p.scdn.co/mp3-preview/8e8a2bc0fbb491338c33762787ab90809560a673?cid=04b4a7effd2d4131a95cbc00aa27ec07
 Album: Red Teenage Melody
 Title: Barbie Doll
+0----Concert List -----
+Venue Location or City: Chicago
+Name of the Venue: The Chicago Theatre
+0----Concert List -----
+Date of the Event: 10/28/2019
+0----Concert List -----
+Name of the Venue: Golden Gate Theater
+Venue Location or City: San Francisco
+0----Concert List -----
+Date of the Event: 10/31/2019
+Name of the Venue: Golden Gate Theater
+Date of the Event: 11/02/2019
+Venue Location or City: San Francisco
+0----Concert List -----
+Name of the Venue: Golden Gate Theater
+Venue Location or City: San Francisco
+Date of the Event: 11/04/2019
+Name of the Venue: THE COLOSSEUM AT CAESARS PALACE
+0----Concert List -----
+Venue Location or City: Las Vegas
+Date of the Event: 11/07/2019
+----Concert List -----
+Name of the Venue: The Chicago Theatre
+Venue Location or City: Chicago
+Date of the Event: 10/28/2019
+----Concert List -----
+Name of the Venue: Golden Gate Theater
+Venue Location or City: San Francisco
+----Concert List -----
+Date of the Event: 10/31/2019
+Name of the Venue: Golden Gate Theater
+Date of the Event: 11/02/2019
+Venue Location or City: San Francisco
+Name of the Venue: Golden Gate Theater
+----Concert List -----
+Venue Location or City: San Francisco
+Date of the Event: 11/04/2019
+----Concert List -----
+Name of the Venue: THE COLOSSEUM AT CAESARS PALACE
+Venue Location or City: Las Vegas
+Date of the Event: 11/07/2019
+0----OMDB Movie -----
+
+Title: Matrix
+ Year:1993–
+ Country:Canada
+ Ratings:[object Object]
+ Actors:Nick Mancuso, Phillip Jarrett, Carrie-Anne Moss, John Vernon
+ Language:English
+ Plot:Steven Matrix is one of the underworld's foremost hitmen until his luck runs out, and someone puts a contract out on him. Shot in the forehead by a .22 pistol, Matrix "dies" and finds ...
+0----OMDB Movie -----
+
+ Year:1993–
+Title: Matrix
+0----OMDB Movie -----
+
+ Ratings:[object Object]
+ Country:Canada
+ Year:1993–
+Title: Matrix
+ Plot:Steven Matrix is one of the underworld's foremost hitmen until his luck runs out, and someone puts a contract out on him. Shot in the forehead by a .22 pistol, Matrix "dies" and finds ...
+ Actors:Nick Mancuso, Phillip Jarrett, Carrie-Anne Moss, John Vernon
+ Language:English
+0----OMDB Movie -----
+
+Title: Matrix
+ Ratings:[object Object]
+ Year:1993–
+ Country:Canada
+ Plot:Steven Matrix is one of the underworld's foremost hitmen until his luck runs out, and someone puts a contract out on him. Shot in the forehead by a .22 pistol, Matrix "dies" and finds ...
+ Language:English
+ Actors:Nick Mancuso, Phillip Jarrett, Carrie-Anne Moss, John Vernon
+0----OMDB Movie -----
+
+Title: Matrix
+ Year:1993–
+ IMDB Rating:7.8/10
+0----OMDB Movie -----
+
+Title: Matrix
+ Year:1993–
+ IMDB Rating:7.8/10
+0----OMDB Movie -----
+
+Title: Matrix
+ IMDB Rating:7.8/10
+ Year:1993–
+0----OMDB Movie -----
+
+Title: Cinderella
+ IMDB Rating:6.9/10
+ Year:2015
+ Rotten Tomato Rating:85%
+ Country:USA, UK
+ Language:English
+ Plot:When her father unexpectedly dies, young Ella finds herself at the mercy of her cruel stepmother and her scheming stepsisters. Never one to give up hope, Ella's fortunes begin to change after meeting a dashing stranger.
+ Actors:Cate Blanchett, Lily James, Richard Madden, Helena Bonham Carter
