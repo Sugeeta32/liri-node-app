@@ -51,10 +51,9 @@ OUTPUT: The sysyetm will display a list of all events and locations of the bands
 
 <screen shot of concert>
 
-<<<<<<< HEAD
-/h4 Example 1: /h4 Run the spotify-this command
+ Example 1: /h4 Run the spotify-this command
 =======
  Example 1:  Run the spotify-this command
->>>>>>> 9ef19110da7e91b01969a4c7be1e2e04160a46d0
 
-node liri.js spotify-this<name of song>
+
+node liri.js spotify-this-song<name of song>
