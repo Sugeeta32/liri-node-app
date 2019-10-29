@@ -37,7 +37,7 @@ function userInput() {
 }
 
 // You'll use Axios to grab data from the [OMDB API]
-// Grab or assemble the movie name and store it in a variable called "movieName"
+
 
 function movieThis() {
     if (input === undefined) {
@@ -97,39 +97,52 @@ function spotifyThis() {
         input = "The Sign"
     }
 
-    spotify.search({ type: 'track', query: input }, function(err, data) {
+    spotify.search({ type: 'track', query: input }, function (err, data) {
         if (err) {
-          return console.log('Error occurred: ' + err);
+            return console.log('Error occurred: ' + err);
         }
-       
-    //   console.log(data.tracks.items[0]);
-      console.log("Artist:" + data.tracks.items[0].artists[0].name) ;
-      console.log(`Title: ${data.tracks.items[0].name}`);
-      console.log(`Preview: ${data.tracks.items[0].preview_url}`);
-     console.log(`Album: ${data.tracks.items[0].album.name}`);
+
+        //   console.log(data.tracks.items[0]);
+        console.log("Artist:" + data.tracks.items[0].artists[0].name);
+        console.log(`Title: ${data.tracks.items[0].name}`);
+        console.log(`Preview: ${data.tracks.items[0].preview_url}`);
+        console.log(`Album: ${data.tracks.items[0].album.name}`);
 
 
-      });
-    // spotify.search(
-    //     { type: "track",
-    //      query: input 
-    //     }).then(function (err, data) {
-    //     if (err) {
-    //         console.log('Error occurred: ' + err);
-    //         return;
-    //     } else {
-    //         console.log(data.tracks.items[0]);
-    //         console.log("Artist:" + data.tracks.items[0].artists[0].name);
-    //     }
+    });
 
-    // });
 }
 
 
-        //   console.log(`Title: ${data.tracks.items[0].name}`);
-        //   console.log(`Preview: ${data.tracks.items[0].preview_url}`);
-        //   console.log(`Album: ${data.tracks.items[0].album.name}`);
-        //   console.log("========================================")
+//Bands in Town Artist Events API
+function concertThis() {
+    axios.get("http://rest.bandsintown.com/artists/" + input + "/events?app_id=codingbootcamp")
+        .then(function (response) {
+            for (var i = 0; i < 5; i++) {
+                // handle success
+                console.log("Name of the Venue: " + response.data[i].venue.name);
+                console.log("Venue Location or City: "+response.data[i].venue.city);
+                console.log("Date of the Event: "+ moment(response.data[i].datetime).format("MM/DD/YYYY"));
+                //console.log(moment("Date: "+response.data[i].datetime).format("YYYY-MM-DD hh:mm:ss a"));
+            }
+            
+        })
+        .catch(function (error) {
+            if (error.response) {
+                // The request was made and the server responded with a status code
+                // that falls out of the range of 2xx
+                console.log(error.response.data);
+                console.log(error.response.status);
+                console.log(error.response.headers);
+            } else if (error.request) {
+                // The request was made but no response was received
+                // `error.request` is an object that comes back with details pertaining to the error that occurred.
+                console.log(error.request);
+            } else {
+                // Something happened in setting up the request that triggered an Error
+                console.log("Error", error.message);
+            }
+            console.log(error.config);
+        });
 
-
-
+}
