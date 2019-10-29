@@ -1,43 +1,34 @@
-# liri-node-app
+## liri-node-app
 
-About the App: 
+####About the App: 
  LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a Language Interpretation and Recognition Interface. LIRI will be a command line node app that takes in parameters and gives you back data.
 
 
 
 LIRI.js can take in one of the following commands:
 
-concert-this
+*concert-this
 
-spotify-this-song
+*spotify-this-song
 
-movie-this
+*movie-this
 
-do-what-it-says
-
-
+*do-what-it-says
 
 
-How to use LIRI:
 
 
- Video Guide:
-Watch the video here - " link to my google drive video or recording of the output"
-
-Step by step instructions 
-=======
- How to use LIRI:
-
+####How to use LIRI:
 
 Video Guide
 Watch the video here - " link to my google drive video or recording of the output"
 
- Step by step instructions 
+ ####Step by step instructions 
 
 
 1. Open your terminal such as bash.
-2. Navigate to the folder that contains the liri.js file.
-3. You can choose to run any of the top four commands, which will result in your deisred output.
+1. Navigate to the folder that contains the liri.js file.
+1. You can choose to run any of the above four commands, which will result in your desired output.
 
  Example 1:  Run the concert-this command
 =======
