@@ -7,13 +7,13 @@
 
 LIRI.js can take in one of the following commands:
 
-*concert-this
+* concert-this
 
-*spotify-this-song
+* spotify-this-song
 
-*movie-this
+* movie-this
 
-*do-what-it-says
+* do-what-it-says
 
 
 
