@@ -57,5 +57,5 @@ OUTPUT: The system will display the search result. The system will also log all 
 `node liri.js movie-this<movie name >`
 
 OUTPUT: The system will display the search result. The system will also log all the results in log.text file and output will be displayed as below:
-
+![](https://github.com/Sugeeta32/Bootstrap-Portfolio/blob/master/Screenshot%20(26).png)
 <screen shot of concert>
