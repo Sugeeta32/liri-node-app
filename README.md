@@ -14,6 +14,7 @@ LIRI.js can take in one of the following commands:
 * movie-this
 
 * do-what-it-says
+
 _Note: LIRI requests are rquired to follow the format: node liri.js(request)(input). The input should be enclosed in quotation marks ""_
 
 
