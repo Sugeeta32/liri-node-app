@@ -39,7 +39,7 @@ Watch the video here - " link to my google drive video or recording of the outpu
 OUTPUT: The system will display a list of 5 events and locations of the bands performing. The system will also log all the results in log.text file and output will be displayed as below:
 
  
- ![screenshot](screenshot23.png)
+ ![screenshot](https://github.com/Sugeeta32/liri-node-app/blob/master/Screenshot%20(23).png)
 
 
  **Example 2:  Run the spotify-this command**
