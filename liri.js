@@ -167,7 +167,7 @@ function doWhatItSays(){
         if(err){
             return console.log(err);
         }else{
-            dataArray = dat.split(",");
+            dataArray = data.split(",");
             request = dataArray[0];
             input= dataArray[1];
             userInput();
@@ -175,5 +175,5 @@ function doWhatItSays(){
         }
 
 
-    })
+    });
 }
