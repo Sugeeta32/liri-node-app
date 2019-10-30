@@ -1,7 +1,7 @@
 ## liri-node-app
 
 #### About the App: 
- LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a Language Interpretation and Recognition Interface. LIRI will be a command line node app that takes in parameters and gives you back data.
+ LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a Language Interpretation and Recognition Interface. LIRI is a command line node app that takes in parameters and gives you back data.
 
 
 
@@ -14,7 +14,7 @@ LIRI.js can take in one of the following commands:
 * movie-this
 
 * do-what-it-says
-
+_Note: LIRI requests are rquired to follow the format: node liri.js(request)(input). The input should be enclosed in quotation marks ""
 
 
 
@@ -34,7 +34,7 @@ Watch the video here - " link to my google drive video or recording of the outpu
 **Example 1: Run the concert-this command**
 
 
-`node liri.js concert-this<name of artist or band>`
+`node liri.js concert-this"name of artist or band"`
 
 OUTPUT: The system will display a list of 5 events and locations of the bands performing. The system will also log all the results in log.text file and output will be displayed as below:
 
@@ -69,3 +69,22 @@ OUTPUT: The system will display the movie search result. The system will also lo
   OUTPUT: The system will display the search result. The output will be displayed as below:
 
 ![](https://github.com/Sugeeta32/Bootstrap-Portfolio/blob/master/Screenshot%20(29).png)
+
+### Technologies Used
+* node.js
+* javascript
+* APIs 
+    * OMDB
+    * Bands in Town
+    * Spotify
+* node packages:
+    * Axios
+    * Node-Spotify-Api
+    * Moment
+    * fs
+    * DotEnv
+* Git
+
+    
+
+
