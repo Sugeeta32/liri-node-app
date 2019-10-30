@@ -40,7 +40,7 @@ OUTPUT: The system will display a list of 5 events and locations of the bands pe
 
 <screen shot of concert>
  
- ![](../desktop/screenshot23.png)
+ ![](screenshot23.png)
 
 
  **Example 2:  Run the spotify-this command**
