@@ -3,8 +3,6 @@
 #### About the App: 
  LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a Language Interpretation and Recognition Interface. LIRI is a command line node app that takes in parameters and gives you back data.
 
-
-
 LIRI.js can take in one of the following commands:
 
 * concert-this
@@ -19,12 +17,7 @@ _Note: LIRI requests are rquired to follow the format: node liri.js(request)(inp
 
 
 
-#### How to use LIRI:
-
-Video Guide
-Watch the video here - " link to my google drive video or recording of the output"
-
- #### Step by step instructions 
+ #### Step by step instructions to use LIRI:
 
 
 1. Open your terminal such as bash.
@@ -50,8 +43,10 @@ OUTPUT: The system will display a list of 5 events and locations of the bands pe
 
 OUTPUT: The system will display the search result. The system will also log all the results in log.text file and output will be displayed as below:
 
+
 ![](https://github.com/Sugeeta32/Bootstrap-Portfolio/blob/master/Screenshot%20(24).png)
 <screen shot of concert>
+ 
  
  **Example 3:  Run the movie-this command**
 
@@ -60,16 +55,20 @@ OUTPUT: The system will display the search result. The system will also log all 
 
 OUTPUT: The system will display the movie search result. The system will also log all the results in log.text file and output will be displayed as below:
 
+
 ![](https://github.com/Sugeeta32/Bootstrap-Portfolio/blob/master/Screenshot%20(26).png)
 <screen shot of concert>
  
+  
   **Example 4:  Run the do-what-it-says command**
   
   
   `node liri.js do-what-it-says`
   OUTPUT: The system will display the search result. The output will be displayed as below:
 
+
 ![](https://github.com/Sugeeta32/Bootstrap-Portfolio/blob/master/Screenshot%20(29).png)
+
 
 ### Technologies Used
 * node.js
